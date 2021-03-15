@@ -1,0 +1,1 @@
+println "0xx".compareTo('000')
