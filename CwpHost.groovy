@@ -3,9 +3,9 @@ static final cwphost = "eicwpol8-138.med.agfa.be"
 def cwphostFile = new File(System.getProperty("java.io.tmpdir"), cwphostFileName)
 
 if(cwphostFile.exists()) {
-    println "${cwphostFileName} found"
+    println "${cwphostFile.path} found"
 }else {
-    println "${cwphostFileName} not found"
+    println "${cwphostFile.path} not found"
     cwphostFile.text = cwphost
 }
 
