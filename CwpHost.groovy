@@ -6,7 +6,6 @@ if(cwphostFile.exists()) {
     println "${cwphostFileName} found"
 }else {
     println "${cwphostFileName} not found"
-    cwphostFile.createNewFile()
     cwphostFile.text = cwphost
 }
 
