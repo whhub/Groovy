@@ -9,6 +9,6 @@ println partSize
 for(int part=1; part<=parts; part++) {
 	println part
 	def start = (part-1) * partSize
-	def end = part == parts ? -1 : part * partSize
-	println files[start..end]
+	def end = part == parts ? -1 : part * partSize - 1
+	files[start..end].each{file-> println file.name}
 }
