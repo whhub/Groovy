@@ -1,9 +1,9 @@
 def specDir = new File("D:/dev/ei-monorepo/ei-angular/apps/ei-web-e2e/src/spec/solution")
 def files = specDir.listFiles()
-println files[]
-def parts =  '5'.isInteger() ? '5' as Integer : 1
+println files
+def parts =  '3'.isInteger() ? '3' as Integer : 1
 def fileCount = files.length
-def partSize = fileCount.intdiv(parts)
+def partSize = Math.round(fileCount/parts) as Integer 
 println partSize
 
 for(int part=1; part<=parts; part++) {
